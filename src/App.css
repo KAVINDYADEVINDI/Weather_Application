@@ -1,38 +1,236 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+	width: 100%;
+  background-image: url('./images/kk.jpg');
+  background-size: cover;
+  top:0;
+  padding-top:80px ;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* min-width: 80%;
+  min-height: 80vh; */
+}
+.main-box{
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./images/kk3.jpg');
+  width: 65%;
+  height: 80vh;
+  box-sizing: border-box;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
+  /* min-width: 500px;
+  min-height: 80vh; */
+}
+.inside-img{
+  float: left;
+}
+
+.left{
+  margin-top: 50vh; 
+  margin-left: 10px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.left .date-left{
+  color: rgb(224, 235, 179);
+  font-size: 16px;
+  margin-right:20px;
+}
+.left .weather-left{
+  color: rgb(211, 212, 154);
+  font-size: 16px;
+}
+.left .temp-left{
+  color: #fff;
+  font-size: 92px;
+  padding: 5px 5px;
+  font-weight: 500;
+}
+.left .location-left{
+  font-size: 40px;
+  color: rgb(216, 203, 185);
+  font-weight: 300;
+
+}
+.left .cloud-icon{
+  color: rgb(218, 177, 120);
+  transform: scale(3);
+  margin: 10px;
+}
+.inside-img h1{
+  color: black;
+  padding: 8px;
+  /* margin-left: 20px; */
+  font-size: 40px;
+  font-weight: 500;
+  text-shadow:4px 4px 8px rgb(121, 97, 18);
+}
+
+.search-box{
+  float: right;
+  height: 80vh;
+  width: 350px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .7);
+  box-shadow: 0 6px 26px rgba(1, 0, 0, .8);
+  
+}
+.search-box input{
+  font-size: 16px;
+  color: aliceblue;
+}
+.search-bar{
+  width:250px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background:none;
+  border-bottom: 1px solid rgb(172, 161, 161);
+}
+.search-icon{
+  padding: 10px;
+  background-color: chocolate;
+  color: white;
+  float: right;
+  margin: 10px;
+
+}
+.search-icon2{
+  padding: 10px;
+  background-color: chocolate;
+  color: rgb(27, 26, 26);
+  float: right;
+  margin: 10px;
+
+}
+.search-icon:hover{
+  /* transform: scale3d(1.1); */
+  /* transform: scale(1.1); */
+  cursor: none;
+
+}
+.location-box{
+  margin-top: 50px;
+}
+.location{
+  font-size: 18px;
+  font-weight: 300;
+  color: azure;
+  text-align: center;
+  text-shadow: beige;
+  text-shadow:4px 4px 8px rgb(250, 248, 248);
+}
+.date{
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  color: azure;
+}
+.weather-box{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temp{
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 52px;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: 500;
+  border-radius:16px ;
+  box-shadow: 3px 6px rgba(0,0,0,0.2);
+  background-color: rgba(255, 255, 255, .2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather{
+  color:#fff;
+  font-weight: 500;
+  font-size: 25px;
+  text-shadow:4px 4px 8px rgb(250, 248, 248);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-description{
+  color:#fff;
+  font-weight: 200;
+  font-size: 20px;
+  text-shadow:4px 4px 8px rgb(250, 248, 248);
+}
+h3{
+  color: rgb(190, 190, 190);
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.line{
+  border-bottom: 1px solid rgb(172, 161, 161);
+  width: 300px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.details{
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+p{
+  color:#fff;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media  screen and (max-width: 1136px) {
+  .main-box{
+    width: 85%;
   }
-  to {
-    transform: rotate(360deg);
+ .inside-img h1{
+   font-size: 30px;
+ }
+ .cloud{
+   display: none;
+ }
+ .location-left{
+   font-size: 30px !important;
+ }
+ .date-left{
+   font-size: 14px !important;
+ }
+ .temp-left{
+   font-size: 70px !important;
+ }
+}
+@media  screen and (max-width: 768px) {
+  .search-box{
+    width: 100%;
+    float: none;
+    
   }
+  .search-bar{
+    width: 200px;
+  }
+  .main-box{
+    width: 85%;
+    
+  }
+ .inside-img h1{
+   font-size: 30px;
+ }
+ .left{
+   display: none;
+ }
+ .search-icon{
+   display: none;
+ }
+ 
+ 
 }
